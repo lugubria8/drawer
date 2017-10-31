@@ -32,13 +32,15 @@ function draw(){
 ctx.fillStyle = 'orange';
 ctx.fillRect(0,0,innerWidth, innerHeight);
 
+ctx.fillStyle = 'green';
+ctx.fillRect(0,0,30, 30);
 // ctx.font = '40px Impact';
 // ctx.fillStyle = 'green';
 //
 // ctx.fillText('hi there!', mouseX, mouseY);
 // ctx.strokeText('WOAH BUDDY!', mouseX, mouseY);
 // ctx.strokeText('YA NEED TO WAKE UP!',mouseX, mouseY);
-// requestAnimationFrame(draw);
+requestAnimationFrame(draw);
 
 }
 function drawRect(){
@@ -68,12 +70,26 @@ function drawRect(){
   ctx.fillStyle = '#ff7373';
   ctx.fillRect(mouseX,mouseY,30,200);
 
+  ctx.fillStyle = '#63C97E';
+  ctx.fillRect(mouseX,mouseY,(-80),(15));
+
+  ctx.fillStyle = '#63C97E';
+  ctx.fillRect(mouseX,mouseY,(80),(15));
 
   requestAnimationFrame(drawRect);
 
 }
 
+function drawAgain(){
+
+  ctx.fillStyle = 'green';
+  ctx.fillRect(mouseX,mouseY,(400),(415));
+
+}
+
+
 
 draw();
 drawRect();
+drawAgain();
 // setInterval(draw, 1000, 30);
